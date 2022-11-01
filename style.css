@@ -1,0 +1,490 @@
+            /* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+            /* HEADER */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(6px);
+}
+header .navBtn{
+    display: none;
+}
+header .project--name{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+header ul li{
+    margin-left: 20px;
+}
+header ul li a{
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+header ul li a:hover,header ul li a.active{
+    background: #fff;
+    color: #2b1055;
+}
+header .mobileNav{
+    display: none;
+}
+
+/* Layout 1 */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section #moon{
+    mix-blend-mode: screen;
+}
+section #mountains_front{
+    z-index: 10;
+}
+section #title{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 6.5vw;
+    font-weight: 900;
+    right: -235px;
+    z-index: 9;
+    transform: translateY(-70px);
+    font-family: 'Poppins', sans-serif;
+}
+section #discover{
+    display: inline-block;
+    z-index: 9;
+    background: #000;
+    border-radius: 40px;
+}
+section #discover span{
+    display: inline-block;
+    padding: 20px 27px;
+    font-size: 2em;
+    border: 1px solid #333;
+    background-color: rgb(0, 255, 162);
+    color: #001d3d;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .15s ease-out,
+                color .15s ease-out,
+                background-color .15s ease-out;
+}
+section #discover:hover span{
+    transform: translate(-9px, -9px);
+    color: #001d3d;
+    background: #ff90e8;
+}
+
+            /* DEF */
+
+#def{
+    position: relative;
+    padding: 100px 100px 0px 100px;
+    background: #1c0522;
+}
+#def h2{
+    font-size: 3.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+#def p{
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 80px;
+    line-height: 30px;
+}
+#def p span{
+    font-weight: 800;
+}
+
+            /* LANGUAGES */
+#codeLang{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    color: #fff;
+}
+#codeLang .lang--title{
+    font-size: 3.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#codeLang p{
+    font-size: 1.4em;
+    margin-top: 80px;
+    line-height: 30px;
+}
+#codeLang span{
+    font-weight: 800;
+}
+#codeLang .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#codeLang .card1, .card2, .card3, .card4, .card5, .card6{
+    width: 450px;
+    height: 540px;
+    border: 2px solid white;
+    margin: 0px 0px 50px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#codeLang .cards img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 20px;
+    object-fit: cover;
+}
+#codeLang .cards h2{
+    font-size: 2em;
+    font-weight: 700;
+    position: relative;
+    top: 40px;
+    text-decoration: underline;
+}
+#codeLang .cards p{
+    font-size: 1.6em;
+    max-width: 330px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+            /* FROM */
+
+#form{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    color: #fff;
+}
+#form h2{
+    font-size: 3.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#form form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form form .group--layer1{
+    justify-content: space-between;
+}
+#form form .group--layer1 input{
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem 20px
+}
+#form form .group--layer1 #lastName{
+    margin-right: 70px;
+}
+#form form .group--layer2{
+    padding: 30px;
+    justify-content: space-between;
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+}
+#form form .group--layer2 .minGroup1--layer2, .minGroup2--layer2{
+    display: flex;
+    flex-direction: column;
+}
+#form form .group--layer2 .minGroup1--layer2 select, .minGroup2--layer2 select{
+    margin-top: 10px;
+}
+#form form .group--layer2 select{
+    border-radius: 10px;
+    width: 340px;
+    padding: 1rem 20px
+}
+#form form .btnSubmit{
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 1rem 3.5rem;
+    border: 1px solid #333;
+    background-color: rgb(0, 255, 162);
+}
+
+            /* SOCIALS */
+
+#socials{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    color: #fff;
+}
+#socials svg{
+    fill: white;
+    width: 50px;
+    height: 50px;
+}
+#socials div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+            /* RESPONSIVE */
+
+@media screen and (max-width: 1200px){
+    header{
+        padding: 30px;
+    }
+    header ul{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 880px){
+    header{
+        padding: 30px;
+        flex-direction: column;
+    }
+    header ul{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 630px){
+    header{
+        padding: 30px 0px;
+    }
+    header ul li{
+        margin-left: 10px;
+    }
+    header ul li a{
+        font-size: 1.08em;
+    }
+}
+@media screen and (max-width: 560px){
+    header{
+        height: 100px;
+    }
+    header .navBtn{
+        display: flex;
+        border: none;
+        width: 40px;
+        height: 60px;
+        background: none;
+        cursor: pointer;
+        align-items: center;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        z-index: 10000;
+    }
+    header .navBtn span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0s 0s ease-out;
+    }
+    .navBtn span:nth-child(1),
+    .navBtn span:nth-child(3){
+        transition: transform 0.3s ease-out;
+    }
+    .navBtn span:nth-child(1){
+        transform: translateY(11px);
+    }
+    .navBtn span:nth-child(3){
+        transform: translateY(-11px);
+    }
+    .navBtn.open span:nth-child(1){
+        transform: translate(0) rotate(135deg);
+    }
+    .navBtn.open span:nth-child(2){
+        opacity: 0;
+        transform: opacity 0s ease-out;
+    }
+    .navBtn.open span:nth-child(3){
+        transform: translate(0) rotate(-135deg);
+    }
+    header ul{
+        display: none;
+    }
+    header .mobileNav{
+        position: relative;
+        display: flex;
+        width: 100vw;
+        background: rgba(48, 46, 46, 0.9);
+        left: -700px;
+        z-index: 1000;
+        top: 10px;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 100vh;
+        transition: left 0.5s cubic-bezier(0.50, 0.11, 0.67, .84);
+    }
+    header .mobileNav.open{
+        left: 0;
+        display: block;
+    }
+    header .mobileNav.open ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #fff;
+        flex-direction: column;
+    }
+    header .mobileNav.open ul li{
+        opacity: 1;
+        font-size: 22px;
+        padding: 20px;
+    }
+    .open{
+        transform: translateX(0%);
+    }
+    .height{
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 1100px){
+    #codeLang .cards{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px){
+    #form form{
+        width: 300px;
+        margin: 70px auto;
+    }
+    #form form .group--layer1 input{
+        margin: 10px 0;
+    }
+    #form form .group--layer1 #lastName{
+        margin-right: 0px;
+    }
+    #form form input, select{
+        width: 100%;
+    }
+    #form form .group--layer2{
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 250px;
+    }
+    #form form .group--layer2 select{
+        margin: 10px 0;
+    }
+}

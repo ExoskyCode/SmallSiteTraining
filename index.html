@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dev Full Stack</title>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <a class="project--name" href="#">Full Stack</a>
+        <ul>
+          <li class="item item1"><a href="#" class="active">Accueil</a></li>
+          <li class="item item2"><a href="#def">C'est quoi ?</a></li>
+          <li class="item item3"><a href="#codeLang">Langages</a></li>
+          <li class="item item4"><a href="#">Formulaire</a></li>
+        </ul>
+        <button
+          class="navBtn"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="mobileNav">
+          <ul>
+            <li class="item"><a href="#" class="active">Accueil</a></li>
+            <li class="item"><a href="#def">C'est quoi ?</a></li>
+            <li class="item"><a href="#codeLang">Langages</a></li>
+            <li class="item"><a href="#">Formulaire</a></li>
+          </ul>
+        </div>
+      </header>
+      <section>
+        <img id="stars" src="assets/stars.png" alt="étoiles" />
+        <img id="moon" src="assets/moon.png" alt="lune" />
+        <img
+          id="mountains_behind"
+          src="assets/mountains_behind.png"
+          alt="montagnes"
+        />
+        <h2 id="title">Dev Full Stack</h2>
+        <a id="discover" href="#def"><span>Découvrir</span></a>
+        <img
+          id="mountains_front"
+          src="assets/mountains_front.png"
+          alt="montagnes"
+        />
+      </section>
+      <div id="def">
+        <h2 class="caption">Développeur Full Stack</h2>
+        <p class="caption">
+          Tout d'abord, dans la programation web, il existe trois types de
+          développeur : <br /><br /><br />
+          - Le développeur <span>Front-End</span> : Il s'occupe de toute la
+          partie visuelle du site web, la partie émergée de l'iceberg, il va
+          souvent <span>intégrer</span> des maquettes faites par des UI/UX
+          designer, son rôle est de rendre le site agréable à l'oeil et d'offrir
+          la meilleure <span>experience utilisateur</span>. <br /><br />
+          - Le développeur <span>Back-End :</span> Il s'occupe de toute la
+          partie immergée de l'iceberg, il s'occupe des
+          <span>bases de données</span>, de la <span>gestion d'API</span>, son
+          travail est nécessaire au bon fonctionnement du site web, cependant,
+          celui-ci ne sera
+          <span>pas visible des utilisateurs</span> contrairement au développeur
+          Front-End. <br /><br />
+          - Le développeur <span>Full Stack</span> : Il est comme un couteau
+          suisse, il <span>sait tout faire</span>, en passant par de
+          <span>l'intégration web</span>, de la
+          <span>gestion de bases de données.</span>
+        </p>
+      </div>
+      <div id="codeLang">
+        <h2 class="lang--title">Les langages de programmation Full Stack</h2>
+        <p class="lang--caption">
+          Etant donné qu'un développeur <span>Full Stack</span> se doit d'avoir
+          des compétences en <span>Front-End</span> et <span>Back-End</span>, il
+          doit acquérir beaucoup de connaissances.
+          <br />
+          <br />
+          Il doit donc maîtriser plusieurs languages de programmation :
+          <br />
+        </p>
+        <div class="cards">
+          <div
+            class="card1 card"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              class="card1--infos"
+              src="assets/cards/card1.png"
+              alt="langage1"
+            />
+            <h2 class="card1--infos">Javascript</h2>
+            <p class="card1--infos">
+              <span>Javascript</span> est un language qui est utilisé tout aussi
+              bien dans le <span>Front-End</span>, que dans le
+              <span>Back-End</span>
+              <br />
+              console.log("Hello World")
+            </p>
+          </div>
+
+          <div
+            class="card2 card"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              class="card2--infos"
+              src="assets/cards/card2.png"
+              alt="langage2"
+            />
+            <h2 class="card2--infos">Python</h2>
+            <p class="card2--infos">
+              <span>Python</span> est le langage
+              <span>le plus utilisé dans le monde</span>, il offre de nombreuses
+              possibilitées, iol s'occupe plus du côté <span>Back-End</span>
+              <br />
+              print("Hello World")
+            </p>
+          </div>
+
+          <div
+            class="card3 card"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              class="card3--infos"
+              src="assets/cards/card3.png"
+              alt="langage3"
+            />
+            <h2 class="card3--infos">PHP</h2>
+            <p class="card3--infos">
+              <span>PHP</span> est un langage
+              <span>impératif orienté objet</span>, le php est un langage
+              principalement conçu pour crér des
+              <span>pages web dynamiques</span>
+              <br />
+              &lt?php echo 'Hello World !'; ?>
+            </p>
+          </div>
+
+          <div
+            class="card4 card"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              class="card4--infos"
+              src="assets/cards/card4.png"
+              alt="langage4"
+            />
+            <h2 class="card4--infos">Ruby</h2>
+            <p class="card4--infos">
+              <span>Ruby</span> est un langage essentiellement
+              <span>Back-End</span> orienté objet
+              <br />
+              "Hello World"
+            </p>
+          </div>
+
+          <div
+            class="card5 card"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              class="card5--infos"
+              src="assets/cards/card5.png"
+              alt="langage5"
+            />
+            <h2 class="card5--infos">React</h2>
+            <p class="card5--infos">
+              <span>React</span> est une <span>librairie javascript</span> qui
+              facilite la création d'applications web en single page
+              <br />
+              ReactDOM.render( &lt?h1>Bonjour, monde !&lt?/h1>,
+              document.getElementById('root') );
+            </p>
+          </div>
+
+          <div
+            class="card6 card"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              class="card6--infos"
+              src="assets/cards/card6.png"
+              alt="langage6"
+            />
+            <h2 class="card6--infos">SQL</h2>
+            <p class="card6--infos">
+              <span>SQL</span> est un language <span>Back-End</span> qui sert à
+              gérer des bases de données
+              <br />
+              select 'Hello, world';
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="form">
+        <h2>Formulaire</h2>
+        <form action="submit">
+          <div class="group--layer1">
+            <input id="lastName" type="text" placeholder="Votre nom" />
+            <input id="firstName" type="text" placeholder="Votre prénom" />
+          </div>
+          <div class="group--layer2">
+            <div class="minGroup1--layer2">
+              <label for="profile">Votre style de développeur préféré</label>
+              <select name="profiles" id="profileChoice">
+                <option value="choice">Style préféré</option>
+                <option value="frontEnd">Front-End</option>
+                <option value="backEnd">Back-End</option>
+                <option value="fullstack">FullStack</option>
+              </select>
+            </div>
+            <div class="minGroup2--layer2">
+              <label for="language">Votre language préféré</label>
+              <select name="languages" id="langChoice">
+                <option value="choice">Language préféré</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="Ruby">Ruby</option>
+                <option value="React">React</option>
+                <option value="SQL">SQL</option>
+              </select>
+            </div>
+          </div>
+          <a class="btnSubmit" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Envoyer</a>
+        </form>
+      </div>
+      <div id="socials" target="_blank">
+        <div>
+        <a href="https://github.com/ExoskyCode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+        </a>
+      </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      ScrollReveal().reveal(".project--name", {
+        delay: 200,
+      });
+      ScrollReveal().reveal(".item1", {
+        delay: 500,
+      });
+      ScrollReveal().reveal(".item2", {
+        delay: 800,
+      });
+      ScrollReveal().reveal(".item3", {
+        delay: 1100,
+      });
+      ScrollReveal().reveal(".item4", {
+        delay: 1400,
+      });
+      ScrollReveal().reveal("#stars", {
+        delay: 700,
+      });
+      ScrollReveal().reveal("#moon", {
+        delay: 900,
+      });
+      ScrollReveal().reveal("#mountains_behind", {
+        delay: 1200,
+      });
+      ScrollReveal().reveal("#mountains_front", {
+        delay: 1700,
+      });
+      ScrollReveal().reveal("#title", {
+        delay: 2200,
+      });
+      ScrollReveal().reveal("#discover", {
+        delay: 2300,
+        duration: 800,
+        scale: 0.5,
+      });
+      ScrollReveal().reveal(".caption", {
+        duration: 1500,
+        opacity: 0,
+        delay: 200,
+        origin: "left",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".lang--title", {
+        duration: 1500,
+        opacity: 0,
+        delay: 200,
+        origin: "left",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".lang--caption", {
+        duration: 1500,
+        opacity: 0,
+        delay: 200,
+        origin: "left",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card1", {
+        duration: 2000,
+        opacity: 0,
+        delay: 200,
+        origin: "bottom",
+        distance: "50px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card1--infos", {
+        duration: 2000,
+        opacity: 0,
+        delay: 200,
+        origin: "bottom",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card2", {
+        duration: 2000,
+        opacity: 0,
+        delay: 500,
+        origin: "bottom",
+        distance: "50px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card2--infos", {
+        duration: 2000,
+        opacity: 0,
+        delay: 500,
+        origin: "bottom",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card3", {
+        duration: 2000,
+        opacity: 0,
+        delay: 800,
+        origin: "bottom",
+        distance: "50px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card3--infos", {
+        duration: 2000,
+        opacity: 0,
+        delay: 800,
+        origin: "bottom",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card4", {
+        duration: 2000,
+        opacity: 0,
+        delay: 200,
+        origin: "bottom",
+        distance: "50px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card4--infos", {
+        duration: 2000,
+        opacity: 0,
+        delay: 200,
+        origin: "bottom",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card5", {
+        duration: 2000,
+        opacity: 0,
+        delay: 500,
+        origin: "bottom",
+        distance: "50px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card5--infos", {
+        duration: 2000,
+        opacity: 0,
+        delay: 500,
+        origin: "bottom",
+        distance: "100px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card6", {
+        duration: 2000,
+        opacity: 0,
+        delay: 800,
+        origin: "bottom",
+        distance: "50px",
+        reset: true,
+      });
+      ScrollReveal().reveal(".card6--infos", {
+        duration: 2000,
+        opacity: 0,
+        delay: 800,
+        origin: "bottom",
+        distance: "100px",
+        reset: true,
+      });
+    </script>
+  </body>
+</html>
