@@ -370,6 +370,15 @@ section #discover:hover span{
     header ul li a{
         font-size: 1.08em;
     }
+    #codeLang{
+        padding: 100px 0px;
+    }
+    #def{
+        padding: 100px 0px;
+    }
+    #form{
+        padding: 100px 0px;
+    }
 }
 @media screen and (max-width: 560px){
     header{
