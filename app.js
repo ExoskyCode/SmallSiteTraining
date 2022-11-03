@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
   mountains_behind.style.top = value * 0.5 + "px";
   mountains_front.style.top = value * 0 + "px";
   title.style.marginRight = value * 2 + "px";
-  title.style.marginTop = value * 1.5 + "px";
+  title.style.marginTop = value * 1 + "px";
   discover.style.marginTop = value * 2.5 + "px";
   header.style.top = value * 1 + "px";
 });
@@ -35,7 +35,7 @@ var position;
 
 // mouse hover event listener
 btn.addEventListener("mouseover", function () {
-    position ? (position = 0) : (position = 250);
+    position ? (position = 0) : (position = 200);
     //adding the css animation property
     btn.style.transform = `translate(${position}px, 0px)`;
     btn.style.transition = "all 0.3s ease";

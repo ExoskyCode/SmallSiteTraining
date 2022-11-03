@@ -116,6 +116,9 @@ section{
     align-items: center;
     overflow: hidden;
 }
+#mountains_behind{
+    z-index: 100;
+}
 section::before{
     content: '';
     position: absolute;
@@ -150,10 +153,11 @@ section #title{
     z-index: 9;
     transform: translateY(-70px);
     font-family: 'Poppins', sans-serif;
+    top: 280px;
 }
 section #discover{
     display: inline-block;
-    z-index: 9;
+    z-index: 1000;
     background: #000;
     border-radius: 40px;
 }
